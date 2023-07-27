@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+</head>
+
+<body>
+    <main>
+        <h1>Cat photos</h1>
+        <section>
+            <p>See more <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+            <a href="https://www.freecatphotoapp.com" target="_blank"><img height="128px" width="231.34px"
+                    src="https://i.ibb.co/zn3GMY3/Pandora-2.jpg" alt="Minha gatinha chamada Pandora">
+            </a>
+        </section>
+        <section></section>
+        <h2> Lista da Pandora</h2>
+        <h3> Coisas que a Pandora ama:</h3>
+        <ul>
+            <li>O ratinho da <a
+                    href="https://www.petz.com.br/produto/brinquedo-kong-para-gatos-rat-colorido-71591?utm_source=google&utm_medium=flp&gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSUAlOzF0rBhFVwP5zZL7VUkzq5qix4HFTm6MMYZVSLiVr8xtOkx37caAgKaEALw_wcB"
+                    target="_blank">Kong</a> (É o favorito dela)</li>
+            <li>Derrubar as coisas (sério ela inferniza tudo)</li>
+            <li>O Bruce</li>
+        </ul>
+        <figure><img height="300px" width="244px" src="https://i.ibb.co/74Jtdyh/Bruce-2.jpg">
+            <figcaption>Esse é o <strong>Bruce</strong></figcaption>
+        </figure>
+        </section>
+        <section>
+            <h3>Coisas que a Pandora odeia:</h3>
+            <ol>
+                <li>Tomar Remédio</li>
+                <li>Ir no veterinário</li>
+                <li>Apanhar de outros gatos (ela morre de medo a bixinha)</li>
+            </ol>
+            <figure><img height="300px" width="244px" src="https://i.ibb.co/NZF87MR/Elsa-2.jpg">
+                <figcaption>Essa é a <em>Elsa</em>, ela adora bater na Pandora</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Apresente seu Gatinho</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <fieldset>
+                    <legend>Seu gato é de casa ou de rua?</legend>
+                    <label> <input id="Decasa" type="radio" name="casa-rua" value="casa" checked>De Casa</label>
+                    <label> <input id="DaRua" type="radio" name="casa-rua" value="rua">De Rua </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Qual é a personalidade do seu gato?</legend>
+                    <label> <input id="carinhoso" type="checkbox" name="personalidade" value="carinhoso"
+                            checked>Carinhoso </label>
+                    <label> <input id="preguicoso" type="checkbox" name="personalidade" value="preguicoso">Preguiçoso
+                    </label>
+                    <label> <input id="energetico" type="checkbox" name="personalidade" value="energetico">Energético
+                    </label>
+                </fieldset>
+                <input type="text" name="urlfotogatinho" placeholder="URL da foto do seu Gatinho" required>
+                <button type="submit">Enviar!</button>
+
+            </form>
+        </section>
+</body>
+</main>
+<footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</p>
+</footer>
+
+</html>
