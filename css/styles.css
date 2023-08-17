@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
@@ -33,13 +33,17 @@ body {
 }
 
 .navigation a {
-    color:white;
+    color: white;
     text-decoration: none;
+
+    animation: navigation-ani;
+    animation-duration: 2.5s;
 }
 
 .navigation a:hover {
     color: #f27609;
 }
+
 .navigation li.nav-button {
     display: none;
 }
@@ -61,6 +65,9 @@ body {
 .profile-pic {
     width: 40%;
     text-align: center;
+
+    animation: capa-ani;
+    animation-duration: 2s;
 }
 
 .profile-pic img {
@@ -72,6 +79,9 @@ body {
 .profile-title {
     vertical-align: top;
     width: 59%;
+
+    animation: title-ani;
+    animation-duration: 2s;
 }
 
 .profile-title h1 {
@@ -88,10 +98,13 @@ body {
     margin-top: -26px;
 }
 
-/* CURRICULO */
+/* Curriculo */
 
 .main {
     padding: 60px 180px 80px 100px;
+
+    animation: main-ani;
+    animation-duration: 2s;
 }
 
 .cv-pic {
@@ -114,7 +127,7 @@ body {
 
 .main h3 {
     font-size: 12px;
-    color:#f27609;
+    color: #f27609;
     text-transform: uppercase;
 }
 
@@ -134,6 +147,10 @@ body {
 
 .caminho li {
     display: inline-block
+}
+
+.caminho a {
+    color: grey;
 }
 
 /* Contato */
@@ -166,10 +183,13 @@ body {
     background-color: black;
     opacity: 0;
     padding-top: 120px;
+    transition: 0.8s;
 }
 
 .blackbox:hover {
     opacity: 80%;
+    transition: 0.8s;
+
 }
 
 .blackbox-text {
@@ -178,7 +198,7 @@ body {
 
 .blackbox-text h1 {
     font-size: 16px;
-    color:#f27609;
+    color: #f27609;
     text-transform: uppercase;
     margin-top: 0;
 }
@@ -187,4 +207,146 @@ body {
     text-transform: none;
     font-weight: 100;
     margin-top: 0;
+}
+
+.back-link {
+    color: #f27609;
+}
+
+
+/* ANIMAÇÕES */
+
+@keyframes capa-ani {
+    0% {
+        opacity: 0;
+        transform: translate(0px, 20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes title-ani {
+    0% {
+        opacity: 0;
+        transform: translate(0px, -20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes navigation-ani {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes main-ani {
+    0% {
+        opacity: 0;
+        transform: translate(-25px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+}
+
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+
+    /* index */
+
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li.nav-button {
+        display: inline-block;
+    }
+
+    .capa div{
+        display: block;
+        height: auto;
+    }
+
+    .profile-pic {
+        width: 100%;
+    }
+
+    .profile-pic img {
+        margin-top: 0;
+        max-width: 80%;
+    }
+
+    .profile-title {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .profile-title h1 {
+        margin-top: 30px;
+        font-size: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-title h2 {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    /* Curriculo */
+
+    .main {
+        padding: 10px 5% 40px 5%;
+
+    }
+
+    .main a{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+    .main p {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .caminho li{
+        font-size: 14px;
+    }
+
+    .cv-pic {
+        float:none;
+        max-width: 100%;
+        margin-right: 0px;
+    }
+
+    .miniatura {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+
+    .blackbox {
+        opacity: 0.8;
+    }
+
 }
