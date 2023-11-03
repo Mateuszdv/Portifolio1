@@ -33,7 +33,8 @@ Se desejar executar o projeto localmente, siga as etapas abaixo:
    ```
 
 2. Abra o arquivo index.html em qualquer navegador da web para visualizar o portfólio.
-Contribuições
+
+## Contribuições
 Este projeto é pessoal e foi criado como parte de um curso. No entanto, sinta-se à vontade para fornecer feedback ou sugestões se desejar.
 
 ## Licença
