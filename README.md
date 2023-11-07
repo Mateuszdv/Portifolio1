@@ -22,7 +22,7 @@ Neste projeto, utilizei as seguintes tecnologias:
 
 ## Como Visualizar o Portfólio
 
-Você pode acessar o meu portfólio online [aqui](https://github.com/Mateuszdv/Portifolio1). 
+Você pode acessar o meu portfólio online [aqui]([https://github.com/Mateuszdv/Portifolio1](https://mateuszdv.netlify.app)). 
 
 Se desejar executar o projeto localmente, siga as etapas abaixo:
 
