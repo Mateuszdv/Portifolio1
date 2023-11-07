@@ -22,7 +22,9 @@ Neste projeto, utilizei as seguintes tecnologias:
 
 ## Como Visualizar o Portfólio
 
-Você pode acessar o meu portfólio online [aqui](https://mateuszdv.netlify.app)
+Você pode acessar o meu primeiro portfólio online [aqui](https://mateuszdv.netlify.app)
+
+Meu portfolio atualizado vc acessa [aqui](https://mateusduarte.vercel.app)
 
 Se desejar executar o projeto localmente, siga as etapas abaixo:
 
